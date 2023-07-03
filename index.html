@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <title>Underworld underground</title>
 
     <link rel="stylesheet" type="text/css" href="vendors/bootstrap.min.css">
@@ -41,7 +41,8 @@
 
     <script>
 
-        const input = document.getElementById("token-question");
+        const input = encodeHtml(document.getElementById("token-question"));
+
         const log = document.getElementById("token-answer");
 
         input.addEventListener("input", updateValue);
